@@ -1,4 +1,4 @@
-const lastId = 0;
+var lastId = 0;
 export default function reducer(state = [], action) {
     switch (action.type) {
         case "bugAdded":
