@@ -1,13 +1,13 @@
 const lastId = 0;
-function reducer(state = [], action) {
+export default function reducer(state = [], action) {
     switch (action.type) {
         case "bugAdded":
             return [
                 ...state,
                 {
                     id: ++lastId,
-                    description : action.payload.description,
-                    resolved : false,
+                    description: action.payload.description,
+                    resolved: false,
                 }
             ];
         case "bugRemoved":
